@@ -1,6 +1,11 @@
 # ChannelPack
-Android生成多渠道包工具
+Android生成多渠道包工具  使用例子:
+
+![](http://i.imgur.com/Iy1StCi.png)
+	
+
     配置文件:
+    
     '
     
                 {
@@ -13,7 +18,7 @@ Android生成多渠道包工具
                         {
                             "UMENG_CHANNEL": "腾讯",
                             "BUGLY_APP_CHANNEL": "腾讯",
-                            "key": "tx"
+                            "key": "tx"		//这个key是用来生成apk文件名的时候用的
                         },
                         {
                             "UMENG_CHANNEL": "百度",
@@ -27,3 +32,4 @@ Android生成多渠道包工具
                         }
                     ]
                 }
+

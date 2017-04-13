@@ -43,7 +43,7 @@ public class ReplaceUtils {
             Iterator<String> keys = jsonObject.keys();
             while (keys.hasNext()) {
                 String key = keys.next();
-                if (!name.equals(key))
+                if (key.equals("key") || !name.equals(key))
                     continue;
                 meta = meta.replace(value, jsonObject.getString(key));
             }
