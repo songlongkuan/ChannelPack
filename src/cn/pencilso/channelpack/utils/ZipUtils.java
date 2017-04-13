@@ -71,12 +71,11 @@ public class ZipUtils {
     public static void sendCMD(String channel) {
         try {
             Config config = Config.getInstance();
-            new File(config.getFoldername() + File.separator + "dist" + File.separator + "release" + File.separator).mkdir();
             String cmd = String.format(JARSIGNERCMD,
                     config.getStore_file(),
                     config.getStore_pass(),
                     config.getFoldername() + File.separator + "dist" + File.separator + channel + "_signed.apk",
-                    config.getFoldername() + File.separator + "dist" + File.separator + "release" + File.separator + channel + ".apk",
+                    config.getFoldername() + File.separator + "dist"  + File.separator + channel + ".apk",
                     config.getStore_alias()
             );
             if (channel != null) {
