@@ -42,6 +42,5 @@ public class ChannelPackMain {
             ReplaceUtils.replaceAndroidManifest(mateJson);
             ZipUtils.packApk(mateJson.getString("key"));
         }
-        ZipUtils.sendCMD(null);
     }
 }
