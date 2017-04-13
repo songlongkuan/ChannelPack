@@ -1,7 +1,9 @@
 # ChannelPack
 Android生成多渠道包工具  使用例子:
 
-![](http://i.imgur.com/Iy1StCi.png)
+例如我这里使用了Bugly与友盟的统计，所以我在配置里面加入了两个字段 清单文件里面的value随意填写就好了，生成的时候会自动替换。
+
+![](http://i.imgur.com/vLHYYkJ.png)
 	
 
     配置文件:
