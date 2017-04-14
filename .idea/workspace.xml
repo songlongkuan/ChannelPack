@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb1694e-95e6-421e-a075-c52476d3d75d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/Log.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/signapk.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/pencilso/channelpack/ChannelPackMain.java" afterPath="$PROJECT_DIR$/src/cn/pencilso/channelpack/ChannelPackMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/Config.java" afterPath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/FileUtils.java" afterPath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/FileUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/ReplaceUtils.java" afterPath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/ReplaceUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/cn/pencilso/channelpack/utils/ZipUtils.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +38,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -726,12 +717,12 @@
       <workItem from="1492053831550" duration="15064000" />
       <workItem from="1492069797734" duration="1101000" />
       <workItem from="1492072043949" duration="6013000" />
-      <workItem from="1492137239804" duration="2298000" />
+      <workItem from="1492137239804" duration="2487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24476000" />
+    <option name="totallyTimeSpent" value="24665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1099,8 +1090,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding />
         </state>
       </provider>
