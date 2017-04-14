@@ -1,8 +1,6 @@
 package cn.pencilso.channelpack;
 
-import cn.pencilso.channelpack.utils.Config;
-import cn.pencilso.channelpack.utils.ReplaceUtils;
-import cn.pencilso.channelpack.utils.ZipUtils;
+import cn.pencilso.channelpack.utils.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -12,11 +10,13 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 /**
- * Created by Administrator on 2017/4/13.
+ * Created by Pencilso on 2017/4/13.
  */
 public class ChannelPackMain {
     public static void main(String[] args) throws Exception {
-        String configPath = "C://apktool/json.config";
+        String configPath = FileUtils.getAppPath(ChannelPackMain.class) + "/json.config";
+        if (!new File(configPath).exists()) throw new NullPointerException(configPath + " is not found file");
+
         {
             StringBuffer jsonBuffer = new StringBuffer();
             BufferedReader reader = new BufferedReader(new FileReader(new File(configPath)));
@@ -28,7 +28,7 @@ public class ChannelPackMain {
         }
         if (new File(Config.getInstance().getFoldername()).exists()) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("输出目录已存在 是否跳过释放apk,进行多渠道打包.（YES | NO）");
+            Log.i("输出目录已存在 是否跳过释放apk,进行多渠道打包.（YES | NO）");
             String inString = scanner.nextLine();
             if (!inString.toLowerCase().equals("yes")) {
                 System.out.println("任务已放弃");
@@ -42,5 +42,6 @@ public class ChannelPackMain {
             ReplaceUtils.replaceAndroidManifest(mateJson);
             ZipUtils.packApk(mateJson.getString("key"));
         }
+        Log.i("任务执行完毕 渠道包存储路径:" + Config.getInstance().getFoldername()  + "dist");
     }
 }

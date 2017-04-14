@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Administrator on 2017/4/13.
+ * Created by Pencilso on 2017/4/13.
  */
 public class ZipUtils {
     public static void unzipApk(String apkPath, String outPath) {
@@ -28,9 +28,9 @@ public class ZipUtils {
                 Config.getInstance().getFoldername()
         };
         try {
-            System.out.println("正在释放apk文件");
+            Log.i("正在释放apk文件");
             Main.main(args);
-            System.out.println("释放完毕");
+            Log.i("释放完毕");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
@@ -49,9 +49,9 @@ public class ZipUtils {
                 channel
         };
         try {
-            System.out.println("正在重新打包 :" + channel + "   path:" + outFile);
+            Log.i("正在重新打包 :" + channel + "   path:" + outFile);
             Main.main(args);
-            System.out.println(channel + " 重新打包完成");
+            Log.i(channel + " 重新打包完成");
             /**
              * 进入释放目录  将dist目录下的apk文件重命名
              */
@@ -74,12 +74,13 @@ public class ZipUtils {
             String cmd = String.format(JARSIGNERCMD,
                     config.getStore_file(),
                     config.getStore_pass(),
-                    config.getFoldername() + File.separator + "dist" + File.separator + channel + "_signed.apk",
-                    config.getFoldername() + File.separator + "dist"  + File.separator + channel + ".apk",
+                    config.getFoldername()  + "dist" + File.separator + channel + "_signed.apk",
+                    config.getFoldername()  + "dist"  + File.separator + channel + ".apk",
                     config.getStore_alias()
             );
+            cmd = new String(cmd.getBytes(),"UTF-8");
             if (channel != null) {
-                System.out.println("执行终端签名 ----" + channel);
+                Log.i("执行终端签名 ----" + channel);
                 Runtime.getRuntime().exec(cmd);
             }
         } catch (IOException e) {

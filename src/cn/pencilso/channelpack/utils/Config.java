@@ -6,7 +6,7 @@ import org.json.JSONObject;
 import java.io.File;
 
 /**
- * Created by Administrator on 2017/4/13.
+ * Created by Pencilso on 2017/4/13.
  */
 public class Config {
     private static Config config;

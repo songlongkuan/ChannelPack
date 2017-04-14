@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.Iterator;
 
 /**
- * Created by Administrator on 2017/4/13.
+ * Created by Pencilso on 2017/4/13.
  */
 public class ReplaceUtils {
     public static void replaceAndroidManifest(JSONObject jsonObject) {
